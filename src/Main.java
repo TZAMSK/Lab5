@@ -1,7 +1,24 @@
+/*
+Alikhan Khakimov
+alikham.khakimov.1@ens.etsmtl.ca
+*/
+
 package src;
 
-public class Main {
+import src.ImageView;
+import javafx.application.Application;
+
+import javafx.stage.Stage;
+
+public class Main extends Application{
+    @Override
+    public void start (Stage stage) {
+        ImageView iView = new ImageView();
+        iView.setup(stage);
+    } 
+
     public static void main(String[] args) {
-        System.out.println("a");
+        launch(args);
     }
+
 }
